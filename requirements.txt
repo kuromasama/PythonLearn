@@ -1,4 +1,3 @@
-# 更新了一些關鍵庫的版本，移除了 torch（將在工作流中單獨安裝）
 anyio==4.4.0
 argon2-cffi==23.1.0
 argon2-cffi-bindings==21.2.0
