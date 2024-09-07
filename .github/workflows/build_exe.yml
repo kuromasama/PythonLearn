@@ -16,13 +16,13 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
-        python-version: '3.8'
+        python-version: '3.12.1'
     
     - name: Install dependencies
       run: |
-        python3 -m pip install --upgrade pip
-        pip3 install -r novel/requirements.txt
-        pip3 install pyinstaller
+        python -m pip install --upgrade pip
+        pip install -r novel/requirements.txt
+        pip install pyinstaller
     
     - name: Build EXE
       run: pyinstaller --onefile novel/novel.py
